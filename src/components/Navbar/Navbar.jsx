@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
-    { id: "education", label: "Education" },
+    { id: "education", label: "Certification" },
   ];
 
   return (
@@ -44,13 +45,16 @@ const Navbar = () => {
     >
       <div className="text-white py-5 flex justify-between items-center">
         {/* Logo */}
+        <a href="#about">
         <div className="text-lg font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
-          <span className="text-white">Tarun</span>
+          <span className="text-white"> SALAHUD</span>
+          <span className="text-white">DIN </span>
           <span className="text-[#8245ec]">/</span>
-          <span className="text-white">Kaushik</span>
+          <span className="text-white"> MEHSUD </span>
           <span className="text-[#8245ec]">&gt;</span>
         </div>
+        </a>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-gray-300">
@@ -68,10 +72,10 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Social Icons */}
+        {/* Social Icons - Added Gmail icon here */}
         <div className="hidden md:flex space-x-4">
           <a
-            href="https://github.com/codingmastr"
+            href="https://github.com/salahuddin-mehsud"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -79,12 +83,19 @@ const Navbar = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/tarun-kaushik-553b441a4"
+            href="https://www.linkedin.com/in/salahuddinmehsud/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
             <FaLinkedin size={24} />
+          </a>
+          {/* Added Gmail icon for desktop view */}
+          <a
+            href="mailto:salahudinsaani4@gmail.com"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <SiGmail size={24} />
           </a>
         </div>
 
@@ -122,7 +133,7 @@ const Navbar = () => {
             ))}
             <div className="flex space-x-4">
               <a
-                href="https://github.com/codingmastr"
+                href="https://github.com/salahuddin-mehsud"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
@@ -130,13 +141,22 @@ const Navbar = () => {
                 <FaGithub size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/tarun-kaushik-553b441a4"
+                href="https://www.linkedin.com/in/salahuddinmehsud/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
               >
                 <FaLinkedin size={24} />
               </a>
+             <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=salahudinsaani4@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-300 hover:text-[#8245ec]"
+>
+  <SiGmail size={24} />
+</a>
+
             </div>
           </ul>
         </div>
