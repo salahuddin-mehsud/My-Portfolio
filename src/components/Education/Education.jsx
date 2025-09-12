@@ -66,7 +66,19 @@ const Education = () => {
                     </h4>
                   </div>
                   {/* Date at the bottom */}
+                  <div className="flex gap-4">
                   <p className="text-sm text-gray-500 mt-2">{edu.date}</p>
+                  {edu.certLink && (
+                    <a
+                      href={edu.certLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-block text-purple-500 font-bold hover:underline"
+                    >
+                      View Certificate
+                    </a>
+                  )}
+                  </div>
                 </div>
               </div>
 

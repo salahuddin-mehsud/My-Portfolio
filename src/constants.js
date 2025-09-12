@@ -159,6 +159,7 @@ export const SkillsInfo = [
       grade: "99% / Duration 39 hr",
       desc: "Completed Microsoft Full-Stack course covering Computational Thinking, Algorithms, Programming Principles, C#, Back-End and Full-Stack Web Development, Git/GitHub version control, pseudocode, and program development, gaining hands-on experience in building complete web applications.",
       degree: "Foundations of Coding Full-Stack by Microsoft",
+      certLink: "https://coursera.org/verify/your-microsoft-cert-link",
     },
     {
       id: 1,
@@ -167,6 +168,7 @@ export const SkillsInfo = [
       date: "September 6, 2025",
       grade: "95% / Duration 9 hr",
       desc: "Completed IBM Introduction to DevOps course, learning DevOps practices including Scrum, CI/CD, Test-Driven Development, Cloud-Native Computing, Microservices, Performance Metrics, and cross-functional collaboration to drive team-oriented culture transformation",
+      certLink: "https://coursera.org/verify/your-microsoft-cert-link",
     },
   ];
   
